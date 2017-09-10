@@ -1,5 +1,6 @@
 # GrandyBooch
 
+Grandy will look at `ENV` and answer your questions about Continuous Integration.
 
 ## Installation
 
@@ -13,7 +14,14 @@ or `gem install grandy_booch`.
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+result = GrandyBooch.new(env).think
+result.ci => GB::Travis, GB::Circle
+result.repo (#slug, #url)
+result.pull_request.present? => true / false
+result.pull_request
+  #number, #platform (github/gitlab)
+```
 
 ## License, Contributor's Guidelines
 
