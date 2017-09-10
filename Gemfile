@@ -7,3 +7,4 @@ gemspec
 
 gem "rake"
 gem "rspec", "~> 3.6"
+gem "pry"
